@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Users\UserController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -15,3 +15,6 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+// User Routes
+Route::get('users/roles', [UserController::class, 'roles_index'])->name('users-roles-index');
