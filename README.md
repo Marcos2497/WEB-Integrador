@@ -27,8 +27,8 @@
     <p>Sigue estos pasos para poner en marcha el proyecto en tu máquina local:</p>
     <h3>1. Clonar el Repositorio</h3>
     <p>Si aún no lo tienes, clona el proyecto desde tu sistema de control de versiones (por ejemplo, Git):</p>
-    <pre><code>git clone &lt;URL_DEL_REPOSITORIO&gt; modelo-simulacion
-cd modelo-simulacion</code></pre>
+    <pre><code>git clone &lt;URL_DEL_REPOSITORIO&gt; web
+cd web</code></pre>
     <h3>2. Instalar Dependencias de PHP</h3>
     <p>Usa Composer para instalar todas las dependencias de Laravel:</p>
     <pre><code>composer install</code></pre>
