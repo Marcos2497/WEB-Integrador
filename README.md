@@ -39,7 +39,7 @@ cd modelo-simulacion</code></pre>
     <p>Laravel necesita una clave de aplicación única para la seguridad:</p>
     <pre><code>php artisan key:generate</code></pre>
     <h3>5. Crear la Base de Datos</h3>
-    <p>Asegúrate de haber creado la base de datos <code>integrador_ms</code> en tu servidor MariaDB/MySQL. Puedes hacerlo desde una herramienta como phpMyAdmin, DBeaver, o la terminal:</p>
+    <p>Asegúrate de haber creado la base de datos <code>integrador_dw</code> en tu servidor MariaDB/MySQL. Puedes hacerlo desde una herramienta como phpMyAdmin, DBeaver, o la terminal:</p>
     <pre><code># Si estás en la terminal de MariaDB/MySQL (conectado con mysql -u root -p)
 CREATE DATABASE integrador_ms CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;</code></pre>
     <h3>6. Ejecutar las Migraciones de Base de Datos</h3>
