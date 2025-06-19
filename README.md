@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Integrador (LogicRoute): Diseño Y Aplicaciones en la WEB</title>
 </head>
 <body>
     <h1>Proyecto Integrador (LogicRoute): Diseño Y Aplicaciones en la WEB</h1>
