@@ -3,7 +3,7 @@
 @section('title', 'Gestión de usuarios')
 
 @section('submenu')
-    <!-- ir al usuario -->
+
     <x-nav-link href="{{ route('users-users-index') }}" :active="request()->routeIs('users-users-*')">
         usuarios
     </x-nav-link>
@@ -16,5 +16,5 @@
 @endsection
 
 @section('content')
-    @livewire('users.role-index')
+    @livewire('users.users-index')
 @endsection

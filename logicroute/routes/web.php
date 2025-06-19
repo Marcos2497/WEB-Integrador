@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Users\UserController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -18,3 +19,5 @@ Route::middleware([
 
 // User Routes
 Route::get('users/roles', [UserController::class, 'roles_index'])->name('users-roles-index');
+Route::get('users/users/create', [UserController::class, 'users_create'])->name('users-users-create');
+Route::get('users/users', [UserController::class, 'users_index'])->name('users-users-index');
