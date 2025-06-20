@@ -11,7 +11,7 @@
                 <th class="px-6 py-3 text-center text-xs font-medium text-black-500 uppercase tracking-wider">ID</th>
                 <th class="px-6 py-3 text-center text-xs font-medium text-black-500 uppercase tracking-wider">Nombre de Usuario</th>
                 <th class="px-6 py-3 text-center text-xs font-medium text-black-500 uppercase tracking-wider">Email</th>
-                {{-- <th class="px-6 py-3 text-center text-xs font-medium text-black-500 uppercase tracking-wider">Rol</th> --}}
+                <th class="px-6 py-3 text-center text-xs font-medium text-black-500 uppercase tracking-wider">Rol</th>
                 <th class="px-6 py-3 text-center text-xs font-medium text-black-500 uppercase tracking-wider">Acciones</th>
             </tr>
         </thead>
@@ -21,11 +21,11 @@
                     <td class="px-6 py-4 text-center whitespace-nowrap text-sm font-medium text-gray-900">{{ $user->id }}</td>
                     <td class="px-6 py-4 text-center whitespace-nowrap text-sm text-gray-500">{{ $user->name }}</td>
                     <td class="px-6 py-4 text-center whitespace-nowrap text-sm text-gray-500">{{ $user->email }}</td>
-                    {{-- <td class="px-6 py-4 text-center whitespace-nowrap text-sm text-gray-500">
+                    <td class="px-6 py-4 text-center whitespace-nowrap text-sm text-gray-500">
                         @foreach($user->roles as $role)
                             <span class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-600 mr-2 mb-2">{{ $role->name }}</span>
                         @endforeach
-                    </td> --}}
+                    </td> 
                     <td class="px-6 py-4 text-center whitespace-nowrap text-sm font-medium">
                         <!-- Aquí irían los botones -->
                         <div>
