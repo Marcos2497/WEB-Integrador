@@ -24,11 +24,11 @@ class RoleSeeder extends Seeder
         // Se crea los permisos
         $dashboard = Permission::create(['name' => 'dashboard', 'guard_name' => 'web']);
         $usuario = Permission::create(['name' => 'usuario', 'guard_name' => 'web']);
-
+        $alimento = Permission::create(['name' => 'alimento', 'guard_name' => 'web']);
 
         // Se asigna los permisos a los roles
         $gerente->givePermissionTo($dashboard, $usuario);
-        $secretario->givePermissionTo($dashboard);
+        $secretario->givePermissionTo($dashboard, $alimento);
         $logitica->givePermissionTo($dashboard);
         $chofer->givePermissionTo($dashboard);
     }

@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Users\UserController;
-
+use App\Http\Controllers\Foods\FoodController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -25,4 +25,12 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
     Route::get('users/users/edit/{id}', [UserController::class, 'users_edit'])->name('users-users-edit');
     //Rutas para el controlador usuario y roles
     Route::get('users/roles', [UserController::class, 'roles_index'])->name('users-roles-index');
+});
+
+// Rutas para el controlador de alimentos
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'can:alimento'])->group(function () {
+    //Rutas para el controlador de alimentos
+    Route::get('food/foods', [FoodController::class, 'foods_index'])->name('food-foods-index');
+
+    Route::get('food/foods/create', [FoodController::class, 'foods_create'])->name('food-foods-create');
 });
