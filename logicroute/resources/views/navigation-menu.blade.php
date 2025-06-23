@@ -15,12 +15,17 @@
                     <x-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+                    @can('usuario')
                     <x-nav-link href="{{ route('users-users-index') }}" :active="request()->routeIs('users-*')">
                         {{ __('Usuario') }}
                     </x-nav-link>
+                    @endcan
+                    @can('alimento')
                     <x-nav-link href="{{ route('food-foods-index') }}" :active="request()->routeIs('food-foods-*')">
                         {{ __('Alimento') }}
                     </x-nav-link>
+                    @endcan
+
                 </div>
             </div>
 

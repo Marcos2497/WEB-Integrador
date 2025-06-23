@@ -18,5 +18,13 @@ class FoodController extends Controller
         return view('vistas_estaticas.food.foods-create');
     }
 
+    public function foods_edit($id)
+    {
+        return view('vistas_estaticas.food.foods-edit', ['id' => $id]);
+    }
     
+    public function tipo_index()
+    {
+        return view('vistas_estaticas.food.tipo-index');
+    }
 }

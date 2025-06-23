@@ -7,12 +7,12 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-     public function roles_index()
+    public function roles_index()
     {
         return view('vistas_estaticas.usuario.roles-index');
     }
 
-        public function users_index()
+    public function users_index()
     {
         return view('vistas_estaticas.usuario.users-index');
     }
@@ -22,5 +22,6 @@ class UserController extends Controller
         return view('vistas_estaticas.usuario.users-create');
     }
 
-}
 
+
+}

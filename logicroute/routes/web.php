@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Users\UserController;
 use App\Http\Controllers\Foods\FoodController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -33,4 +34,8 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
     Route::get('food/foods', [FoodController::class, 'foods_index'])->name('food-foods-index');
 
     Route::get('food/foods/create', [FoodController::class, 'foods_create'])->name('food-foods-create');
+
+    Route::get('food/foods/edit/{id}', [FoodController::class, 'foods_edit'])->name('food-foods-edit');
+
+    Route::get('food/tipos', [FoodController::class, 'tipo_index'])->name('food-tipos-index');
 });
