@@ -47,4 +47,5 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
 
     Route::get('barn/barns', [BarnController::class, 'barns_index'])->name('barn-barns-index');
     Route::get('barn/barns/create', [BarnController::class, 'barns_create'])->name('barn-barns-create');
+    Route::get('barn/barns/edit/{id}', [BarnController::class, 'barns_edit'])->name('barn-barns-edit');
 });

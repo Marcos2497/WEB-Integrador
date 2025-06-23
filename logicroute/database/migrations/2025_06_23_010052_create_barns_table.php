@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('barns', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('infraestructura_id')
+                ->constrained('infraestructuras')
+                ->restrictOnDelete();
             $table->timestamps();
         });
     }

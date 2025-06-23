@@ -13,5 +13,16 @@ class BarnController extends Controller
         return view('vistas_estaticas.barn.barns-index');
     }
 
-    
+    // Mostrar el formulario para crear un nuevo galpon
+    public function barns_create()
+    {
+
+        return view('vistas_estaticas.barn.barns-create');
+    }
+
+    // Mostrar el formulario para editar un galpon existente
+    public function barns_edit($id)
+    {
+        return view('vistas_estaticas.barn.barns-edit', ['id' => $id]);
+    }
 }

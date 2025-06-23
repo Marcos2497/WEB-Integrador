@@ -64,9 +64,6 @@
                             <button id="deleteConfirm" class="text-red-500 hover:text-red-900 font-medium transition duration-300">
                                 Eliminar
                             </button>
-                            <a href="{{route('barn-barns-movimientos', ['id' => $barn->id] )}}" class="text-green-600 hover:text-green-900">
-                                Movimientos
-                            </a>
                             <a href="{{ route('barn-barns-edit', ['id' => $barn->id]) }}" class="text-blue-500 hover:text-blue-900">
                                 Editar
                             </a>
