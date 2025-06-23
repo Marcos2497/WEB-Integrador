@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Proyecto Integrador (LogicRoute): Diseño Y Aplicaciones en la WEB</h1>
-    <h2><span class="section-icon">🚀</span> ¡Bienvenido al Proyecto <code>modelo-simulacion</code>!</h2>
+    <h2><span class="section-icon">🚀</span> ¡Bienvenido al Proyecto <code>LogicRoute</code>!</h2>
     <p>
         Este repositorio contiene la implementación del caso integrador de <strong>Diseño y Aplicaiones en la WEB</strong>, desarrollado en <strong>Laravel 11, PHP 8.2.12+, Livewire 3 y MariaDB/MySQL</strong>. El objetivo es dearrollar un sistema de logística de transporte de alimentos balanceados, permitiendo el manejo de usuario con susrespectivos roles y permisos, gestion de tipo de alimentos, alimentos , stock, galpones.
     </p>
