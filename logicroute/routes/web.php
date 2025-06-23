@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Users\UserController;
 use App\Http\Controllers\Foods\FoodController;
-
+use App\Http\Controllers\Barns\BarnController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -38,4 +38,13 @@ Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified',
     Route::get('food/foods/edit/{id}', [FoodController::class, 'foods_edit'])->name('food-foods-edit');
 
     Route::get('food/tipos', [FoodController::class, 'tipo_index'])->name('food-tipos-index');
+});
+
+// Rutas para el controlador de Barn(Galpon)
+//Rutas para el controlador de galpon
+Route::middleware(['auth:sanctum', config('jetstream.auth_session'), 'verified', 'can:galpon'])->group(function () {
+    //Rutas para el controlador de Galpónes
+
+    Route::get('barn/barns', [BarnController::class, 'barns_index'])->name('barn-barns-index');
+    Route::get('barn/barns/create', [BarnController::class, 'barns_create'])->name('barn-barns-create');
 });

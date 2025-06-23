@@ -25,7 +25,11 @@
                         {{ __('Alimento') }}
                     </x-nav-link>
                     @endcan
-
+                    @can('galpon')
+                    <x-nav-link href="{{ route('barn-barns-index') }}" :active="request()->routeIs('barn-barns-*')">
+                        {{ __('Galpón') }}
+                    </x-nav-link>
+                    @endcan
                 </div>
             </div>
 
