@@ -30,8 +30,8 @@ Sigue estos pasos para poner en marcha el proyecto en tu máquina local:
 Si aún no lo tienes, clona el proyecto desde tu sistema de control de versiones (por ejemplo, Git):
 
 ```bash
-git clone <URL_DEL_REPOSITORIO> web
-cd web
+git clone https://github.com/Marcos2497/WEB-Integrador
+cd WEB-Integrador
 ```
 
 ### 2. Instalar Dependencias de PHP
@@ -58,11 +58,13 @@ Asegúrate de haber creado la base de datos integrador_dw en tu servidor MariaDB
 -- Si estás en la terminal de MariaDB/MySQL (conectado con mysql -u root -p)
 CREATE DATABASE integrador_ms CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ```
+
 ### 6. Ejecutar las Migraciones de Base de Datos
 Esto creará las tablas necesarias en tu base de datos:
 ```bash
 php artisan migrate
 ``` 
+
 ### 7. Instalar Dependencias de Frontend
 
 Para compilar los assets de frontend (Vite), instala las dependencias de Node.js:
