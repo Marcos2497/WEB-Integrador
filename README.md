@@ -51,31 +51,27 @@ Laravel necesita una clave de aplicación única para la seguridad:
 php artisan key:generate
 ```
 
-### 5. Crear la Base de Datos
-
-Asegúrate de haber creado la base de datos integrador_dw en tu servidor MariaDB/MySQL. Puedes hacerlo desde una herramienta como phpMyAdmin, DBeaver, o la terminal:
-```sql    
--- Si estás en la terminal de MariaDB/MySQL (conectado con mysql -u root -p)
-CREATE DATABASE integrador_ms CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-```
-
-### 6. Ejecutar las Migraciones de Base de Datos
+### 5. Ejecutar las Migraciones de Base de Datos
 Esto creará las tablas necesarias en tu base de datos:
 ```bash
-php artisan migrate
+php artisan migrate --seed
 ``` 
 
-### 7. Instalar Dependencias de Frontend
+### 6. Instalar Dependencias de Frontend
 
 Para compilar los assets de frontend (Vite), instala las dependencias de Node.js:
 ```bash
 npm install
 ```
 
-### 8. Iniciar el Servidor de Desarrollo
+### 7. Iniciar el Servidor de Desarrollo
 Finalmente, inicia el servidor de desarrollo de Laravel:
 ```bash
 php artisan serve
+```
+### 8. Iniciar el Servidor Frontend con vite
+```bash
+npm run dev
 ```
 
 Ahora puedes acceder a la aplicación en tu navegador, usualmente en http://127.0.0.1:8000 o http://localhost:8000.
