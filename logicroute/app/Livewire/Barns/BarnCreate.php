@@ -21,8 +21,8 @@ class BarnCreate extends Component
     public function save()
     {
         $validatedData = $this->validate([
-            'latitude' => 'required|between:-90,90|unique:infraestructuras,latitude',
-            'longitude' => 'required|between:-180,180|unique:infraestructuras,longitude',
+            'latitude' => 'required|between:-90,90|numeric|unique:infraestructuras,latitude',
+            'longitude' => 'required|between:-180,180|numeric|unique:infraestructuras,longitude',
             'nombre' => 'required|unique:infraestructuras,nombre',
             'capacidad_maxima' => 'required|numeric|min:1',
             'estado' => 'required',

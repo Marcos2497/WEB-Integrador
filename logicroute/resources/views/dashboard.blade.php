@@ -13,8 +13,7 @@
             @yield('content')
             @if (request()->routeIs('dashboard'))
                 <div class="alert alert-success">
-                    La verdad es que no se si esto funciona
-                </div>
+                    </div>
             @endif
     </div>
 </x-app-layout>
