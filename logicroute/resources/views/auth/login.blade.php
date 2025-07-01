@@ -15,6 +15,9 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
+            <div class="mb-6 flex items-center justify-center">
+                <span class="text-xl font-bold text-indigo-800 tracking-wide">Inicio de sesión</span>
+            </div>
             <div>
                 <x-label for="email" value="{{ __('Email') }}" />
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />

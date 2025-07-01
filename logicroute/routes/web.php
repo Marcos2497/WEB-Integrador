@@ -5,7 +5,7 @@ use App\Http\Controllers\Users\UserController;
 use App\Http\Controllers\Foods\FoodController;
 use App\Http\Controllers\Barns\BarnController;
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 Route::middleware([
