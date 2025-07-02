@@ -17,9 +17,9 @@
                         {{ __('Dashboard') }}
                     </x-nav-link>
                     @can('usuario')
-                    <x-nav-link href="{{ route('users-users-index') }}" :active="request()->routeIs('users-*')">
+                    <!-- <x-nav-link href="{{ route('users-users-index') }}" :active="request()->routeIs('users-*')">
                         {{ __('Usuario') }}
-                    </x-nav-link>
+                    </x-nav-link> -->
                     @endcan
                     @can('alimento')
                     <x-nav-link href="{{ route('food-foods-index') }}" :active="request()->routeIs('food-foods-*')">
